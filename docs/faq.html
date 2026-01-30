@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Haringey Multi-Day Parking Extension</title>
+  <title>FAQ - UK Multi-Day Parking Extension</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -17,193 +17,162 @@
       color: #1e40af;
       border-bottom: 2px solid #2563eb;
       padding-bottom: 10px;
-      margin-bottom: 8px;
     }
-    .subtitle {
-      color: #6b7280;
-      margin-top: 0;
-      margin-bottom: 18px;
-      font-size: 14px;
+    h2 {
+      color: #1e40af;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
     }
     .disclaimer {
       background: #fef3c7;
       border-left: 4px solid #f59e0b;
       padding: 12px 16px;
-      margin: 18px 0 22px 0;
+      margin: 20px 0;
       font-size: 14px;
-      border-radius: 6px;
     }
-    .story {
+    .info-box {
       background: #eff6ff;
       border-left: 4px solid #2563eb;
-      padding: 14px 16px;
-      margin: 18px 0 26px 0;
-      border-radius: 6px;
+      padding: 12px 16px;
+      margin: 20px 0;
+      font-size: 14px;
     }
-    .story h2 {
-      margin: 0 0 6px 0;
-      color: #1e40af;
-      font-size: 16px;
+    .faq-item {
+      margin-bottom: 24px;
     }
-    .story p { margin: 0; color: #374151; }
-
-    .faq-item { margin-bottom: 24px; }
     .faq-item h3 {
       color: #1e40af;
       margin-bottom: 8px;
       font-size: 16px;
     }
-    .faq-item p { margin: 0; color: #374151; }
-    .faq-item ul { margin: 10px 0 0 18px; color: #374151; }
-    .faq-item li { margin-bottom: 6px; }
-
+    .faq-item p {
+      margin: 0;
+      color: #374151;
+    }
+    .roadmap-item {
+      margin-bottom: 12px;
+      padding-left: 24px;
+      position: relative;
+    }
+    .roadmap-item::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+    }
     .contact {
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-      border-radius: 10px;
+      background: #eff6ff;
+      border-radius: 8px;
       padding: 16px;
-      margin-top: 34px;
+      margin-top: 30px;
     }
     .contact h2 {
       margin-top: 0;
+      padding-top: 0;
+      border-top: none;
       color: #1e40af;
-      font-size: 16px;
     }
-    a { color: #2563eb; }
-    .muted { color: #6b7280; font-size: 13px; }
-    code {
-      background: #f3f4f6;
-      padding: 2px 6px;
-      border-radius: 6px;
-      font-size: 12px;
+    .feedback-highlight {
+      background: #ecfdf5;
+      border-left: 4px solid #10b981;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    a {
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
   <h1>Frequently Asked Questions</h1>
-  <p class="subtitle">Haringey Multi-Day Parking Extension — book visitor permits faster, with less hassle.</p>
 
   <div class="disclaimer">
-    <strong>Important:</strong> This is an independent tool and is <strong>not made by or affiliated with Haringey Council</strong> (or the permit website provider). It simply helps automate the same steps you would do manually on the official portal.
-  </div>
-
-  <div class="story">
-    <h2>Why I built this</h2>
-    <p>
-      I live in Haringey and during a building project I had to book visitor permits constantly for over 7 months, for different cars.
-      The portal only allows booking <strong>one day at a time</strong> — which meant repeating the same steps over and over.
-      I lost quite a lot of time, made mistakes and got a couple of fines.
-      So I decided to fix the problem myself and turn it into a simple tool others can benefit from too.
-    </p>
+    <strong>Important:</strong> This is an independent tool, not made by or affiliated with any council or the permit website provider. It's built to save time when booking visitor parking permits.
   </div>
 
   <div class="faq-item">
     <h3>What does this extension do?</h3>
-    <p>
-      It helps you book multiple days of Haringey visitor parking permits in one flow instead of repeating the same booking process day-by-day.
-      You select a date range, pick your vehicle, and the extension guides/automates the bookings.
-    </p>
+    <p>It lets you book multiple days of visitor parking permits at once, instead of booking each day separately on your council's parking portal. Select a date range, pick your vehicle, and book all days with one click.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Who is this useful for?</h3>
-    <p>Anyone who regularly books visitor permits, especially:</p>
-    <ul>
-      <li><strong>Building works / trades:</strong> book a week (or more) without daily repetition.</li>
-      <li><strong>Family visits:</strong> grandparents or relatives staying for several days.</li>
-      <li><strong>Friends staying over:</strong> long weekends, holidays, or frequent visitors.</li>
-      <li><strong>Busy households:</strong> reduce last-minute stress and avoid accidental gaps.</li>
-    </ul>
+    <h3>Which councils does this work with?</h3>
+    <p>This extension works exclusively with UK councils that use the Taranto parking permit system. This includes councils like Haringey, Southwark, Ealing, Hounslow, Tower Hamlets, Coventry, Wandsworth, and many others. If your council's parking website URL contains "tarantopermits.com" or "tarantoportal.com", this extension should work for you.</p>
   </div>
 
   <div class="faq-item">
-    <h3>What’s the main use case?</h3>
-    <p>
-      <strong>Multi-day booking.</strong> The portal makes you repeat the same actions for each day.
-      This extension reduces that friction, so it’s easier to stay compliant and avoid mistakes.
-    </p>
-  </div>
-
-  <div class="faq-item">
-    <h3>Does it help avoid unnecessary bookings?</h3>
-    <p>
-      Yes. The extension can help you avoid booking permits when they aren’t needed (for example, outside restricted hours or on days that don’t require a permit).
-      This saves time and can help avoid wasting vouchers.
-    </p>
+    <h3>Is this an official council tool?</h3>
+    <p>No. This is an independent browser extension. It simply automates the same booking process you would do manually on your council's official parking website.</p>
   </div>
 
   <div class="faq-item">
     <h3>Is it safe to use?</h3>
-    <p>
-      The extension only runs on the official Haringey permit website.
-      It does <strong>not</strong> store your login details. Your saved vehicles and preferences are stored locally in your browser.
-      Subscription access is managed by <strong>ExtensionPay</strong> (payment processing via <strong>Stripe</strong>).
-    </p>
+    <p>Yes. The extension only works on official council parking websites. It doesn't access or store your login credentials - you log in normally, and the extension simply helps you fill in the booking forms faster. Your saved vehicles and preferences are stored locally in your browser. The only data sent externally is anonymous usage analytics to help improve the extension.</p>
   </div>
 
   <div class="faq-item">
     <h3>Will it always work?</h3>
-    <p>
-      The extension depends on the permit website’s layout and behavior.
-      If the council/provider updates the site, the extension may stop working temporarily.
-      If that happens, please report it — I actively maintain the extension and aim to fix issues quickly.
-    </p>
+    <p>The extension depends on the Taranto booking system staying the same. If the system is updated significantly, the extension might stop working temporarily. We're committed to fixing any issues as quickly as possible.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Should I always use daily vouchers?</h3>
+    <div class="info-box">
+      <strong>Tip:</strong> Some councils offer weekly or multi-day voucher options that may be better value than buying 5+ individual daily vouchers. Before booking a long stay, check your council's available voucher types - you might save money with a weekly option. This extension currently works with hourly/daily vouchers; support for other voucher types is on our roadmap.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <h3>What about the "Skip days" feature?</h3>
+    <p>The smart day skipping feature can automatically skip bank holidays and days that don't require permits for your zone. Currently, detailed zone data is available for Haringey. For other councils, the extension will skip bank holidays but cannot skip non-restricted days. We're adding more council zone data based on user requests.</p>
   </div>
 
   <div class="faq-item">
     <h3>How much does it cost?</h3>
-    <p>
-      You get <strong>3 free booking sessions</strong> to make sure it works for you and to see the benefits.
-      After that, it’s <strong>£3/month</strong>.
-    </p>
-    <p class="muted" style="margin-top:10px;">
-      The fee helps cover development time and running costs, and is typically less than the cost of just a few hours of paid parking/permits —
-      especially compared to the cost of a single fine.
-    </p>
+    <p>You get <strong>3 free booking sessions</strong> to try it out. After that, it's <strong>£3.90/month</strong> (about the cost of 3 daily visitor vouchers). Pro users also get extra features like saving multiple vehicles and favourite times.</p>
   </div>
 
   <div class="faq-item">
-    <h3>What’s included in the free trial vs Pro?</h3>
+    <h3>What's included in Pro?</h3>
     <p>
-      <strong>Free trial:</strong> Multi-day booking (up to 3 booking sessions)<br>
-      <strong>Pro:</strong> Unlimited multi-day bookings, save multiple vehicles, save favourite times, and smarter skipping of days/times that don’t require a permit
+      <strong>Free:</strong> Book multiple days at once (3 sessions)<br>
+      <strong>Pro:</strong> Unlimited bookings, save multiple vehicles with custom names, save favourite booking hours, skip days that don't need permits
     </p>
   </div>
 
   <div class="faq-item">
     <h3>How do I cancel my subscription?</h3>
-    <p>
-      You can cancel anytime through the subscription/payment flow (Stripe via ExtensionPay).
-      Your Pro access continues until the end of your billing period.
-    </p>
+    <p>You can cancel anytime through the payment provider (Stripe via ExtensionPay). Your Pro access continues until the end of your billing period.</p>
   </div>
 
   <div class="faq-item">
-    <h3>Something isn’t working — what do I do?</h3>
-    <p>
-      First, refresh the Haringey permit page and try again.
-      If the problem persists, please get in touch and include:
-      (1) what you were trying to do, (2) what happened, and (3) a screenshot if possible.
-    </p>
+    <h3>Something isn't working - what do I do?</h3>
+    <p>Try refreshing the parking page. If the problem persists, please get in touch (see below). Include which council you're using, what you were trying to do, and any error messages you saw.</p>
   </div>
 
-  <div class="faq-item">
-    <h3>I have an idea for a feature</h3>
-    <p>
-      Please share it! This extension exists because a real pain point needed fixing.
-      Suggestions from other Haringey residents help make it better for everyone.
-    </p>
-  </div>
+  <h2>Roadmap</h2>
+  <p>We're actively developing new features based on user feedback. Here's what's planned:</p>
+
+  <div class="roadmap-item"><strong>More council zone data:</strong> Adding restriction hours for more councils so smart day skipping works everywhere</div>
+  <div class="roadmap-item"><strong>Weekly voucher support:</strong> Support for weekly and other multi-day voucher types where available</div>
+  <div class="roadmap-item"><strong>Voucher balance alerts:</strong> Get notified when your voucher balance is running low</div>
+  <div class="roadmap-item"><strong>Booking history:</strong> View your past bookings made through the extension</div>
+  <div class="roadmap-item"><strong>Multiple zones:</strong> Support for users who need permits in different zones</div>
+
+  <p style="margin-top: 16px; font-size: 14px; color: #6b7280;">Have a feature request? We prioritise based on user feedback - get in touch!</p>
 
   <div class="contact">
-    <h2>Get in touch</h2>
-    <p>Found a bug? Want a feature? Need help?</p>
+    <h2>Get in Touch</h2>
+    <p>Found a bug? Have a feature request? Want zone data added for your council?</p>
+
+    <div class="feedback-highlight">
+      <strong>We value your feedback!</strong> If you provide meaningful, constructive feedback that helps improve the extension, we may gift you a free Pro subscription as a thank you. Whether it's a bug report with detailed steps to reproduce, a well-thought-out feature suggestion, or zone data for your council - we appreciate users who help make this tool better for everyone.
+    </div>
+
     <p>
-      <strong>GitHub:</strong> <a href="https://github.com/ataria-/haringey-parking-assistant/issues">Report an issue</a><br>
       <strong>Email:</strong> <a href="mailto:haringeyparkingextension@gmail.com">haringeyparkingextension@gmail.com</a>
-    </p>
-    <p class="muted" style="margin-top: 12px;">
-      Tip: If you report a bug, include the page you were on (e.g. <code>/Booking</code>) and whether you’re on Pro or the free trial.
     </p>
   </div>
 
